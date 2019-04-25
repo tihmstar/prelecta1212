@@ -14,7 +14,9 @@
 		8710CBF4227237D800CBA370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8710CBF2227237D800CBA370 /* LaunchScreen.storyboard */; };
 		8710CBF7227237D800CBA370 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710CBF6227237D800CBA370 /* main.m */; };
 		8710CBFF227238F600CBA370 /* exploit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710CBFD227238F500CBA370 /* exploit.m */; };
-		8710CC02227238FF00CBA370 /* offsets.c in Sources */ = {isa = PBXBuildFile; fileRef = 8710CC01227238FF00CBA370 /* offsets.c */; };
+		8710CC02227238FF00CBA370 /* offsets.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8710CC01227238FF00CBA370 /* offsets.cc */; };
+		8710CC0522723BCD00CBA370 /* readyMe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8710CC0322723BCD00CBA370 /* readyMe.cpp */; };
+		8710CC0822723CB000CBA370 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710CC0722723CB000CBA370 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,10 @@
 		8710CBFD227238F500CBA370 /* exploit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = exploit.m; sourceTree = "<group>"; };
 		8710CBFE227238F600CBA370 /* exploit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exploit.h; sourceTree = "<group>"; };
 		8710CC00227238FF00CBA370 /* offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offsets.h; sourceTree = "<group>"; };
-		8710CC01227238FF00CBA370 /* offsets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = offsets.c; sourceTree = "<group>"; };
+		8710CC01227238FF00CBA370 /* offsets.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = offsets.cc; sourceTree = "<group>"; };
+		8710CC0322723BCD00CBA370 /* readyMe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = readyMe.cpp; sourceTree = "<group>"; };
+		8710CC0422723BCD00CBA370 /* readyMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = readyMe.h; sourceTree = "<group>"; };
+		8710CC0722723CB000CBA370 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8710CC0822723CB000CBA370 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +56,7 @@
 			children = (
 				8710CBE6227237D700CBA370 /* prelecta1212 */,
 				8710CBE5227237D700CBA370 /* Products */,
+				8710CC0622723CB000CBA370 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,12 +73,14 @@
 			children = (
 				8710CBE7227237D700CBA370 /* AppDelegate.h */,
 				8710CBE8227237D700CBA370 /* AppDelegate.m */,
-				8710CBEA227237D700CBA370 /* ViewController.h */,
-				8710CBEB227237D700CBA370 /* ViewController.m */,
-				8710CC01227238FF00CBA370 /* offsets.c */,
 				8710CC00227238FF00CBA370 /* offsets.h */,
+				8710CC01227238FF00CBA370 /* offsets.cc */,
 				8710CBFE227238F600CBA370 /* exploit.h */,
 				8710CBFD227238F500CBA370 /* exploit.m */,
+				8710CC0422723BCD00CBA370 /* readyMe.h */,
+				8710CC0322723BCD00CBA370 /* readyMe.cpp */,
+				8710CBEA227237D700CBA370 /* ViewController.h */,
+				8710CBEB227237D700CBA370 /* ViewController.m */,
 				8710CBED227237D700CBA370 /* Main.storyboard */,
 				8710CBF0227237D800CBA370 /* Assets.xcassets */,
 				8710CBF2227237D800CBA370 /* LaunchScreen.storyboard */,
@@ -79,6 +88,14 @@
 				8710CBF6227237D800CBA370 /* main.m */,
 			);
 			path = prelecta1212;
+			sourceTree = "<group>";
+		};
+		8710CC0622723CB000CBA370 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8710CC0722723CB000CBA370 /* IOKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8710CC02227238FF00CBA370 /* offsets.c in Sources */,
+				8710CC02227238FF00CBA370 /* offsets.cc in Sources */,
 				8710CBEC227237D700CBA370 /* ViewController.m in Sources */,
 				8710CBFF227238F600CBA370 /* exploit.m in Sources */,
+				8710CC0522723BCD00CBA370 /* readyMe.cpp in Sources */,
 				8710CBF7227237D800CBA370 /* main.m in Sources */,
 				8710CBE9227237D700CBA370 /* AppDelegate.m in Sources */,
 			);
@@ -299,6 +317,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M7EX974CE7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/external/liboffsetfinder64/include";
 				INFOPLIST_FILE = prelecta1212/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,6 +342,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/external/liboffsetfinder64/include";
 				INFOPLIST_FILE = prelecta1212/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#include "exploit.h"
+#include "readyMe.h"
 
 @interface ViewController ()
 
@@ -19,6 +19,8 @@
     [super viewDidLoad];
 
 
+    readyMe(); //get tfp0 and stuff
+    
 }
 
 

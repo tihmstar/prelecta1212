@@ -13,6 +13,8 @@
 		8710CBF1227237D800CBA370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8710CBF0227237D800CBA370 /* Assets.xcassets */; };
 		8710CBF4227237D800CBA370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8710CBF2227237D800CBA370 /* LaunchScreen.storyboard */; };
 		8710CBF7227237D800CBA370 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710CBF6227237D800CBA370 /* main.m */; };
+		8710CBFF227238F600CBA370 /* exploit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710CBFD227238F500CBA370 /* exploit.m */; };
+		8710CC02227238FF00CBA370 /* offsets.c in Sources */ = {isa = PBXBuildFile; fileRef = 8710CC01227238FF00CBA370 /* offsets.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		8710CBF3227237D800CBA370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8710CBF5227237D800CBA370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8710CBF6227237D800CBA370 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8710CBFD227238F500CBA370 /* exploit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = exploit.m; sourceTree = "<group>"; };
+		8710CBFE227238F600CBA370 /* exploit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exploit.h; sourceTree = "<group>"; };
+		8710CC00227238FF00CBA370 /* offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offsets.h; sourceTree = "<group>"; };
+		8710CC01227238FF00CBA370 /* offsets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = offsets.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				8710CBE8227237D700CBA370 /* AppDelegate.m */,
 				8710CBEA227237D700CBA370 /* ViewController.h */,
 				8710CBEB227237D700CBA370 /* ViewController.m */,
+				8710CC01227238FF00CBA370 /* offsets.c */,
+				8710CC00227238FF00CBA370 /* offsets.h */,
+				8710CBFE227238F600CBA370 /* exploit.h */,
+				8710CBFD227238F500CBA370 /* exploit.m */,
 				8710CBED227237D700CBA370 /* Main.storyboard */,
 				8710CBF0227237D800CBA370 /* Assets.xcassets */,
 				8710CBF2227237D800CBA370 /* LaunchScreen.storyboard */,
@@ -141,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8710CC02227238FF00CBA370 /* offsets.c in Sources */,
 				8710CBEC227237D700CBA370 /* ViewController.m in Sources */,
+				8710CBFF227238F600CBA370 /* exploit.m in Sources */,
 				8710CBF7227237D800CBA370 /* main.m in Sources */,
 				8710CBE9227237D700CBA370 /* AppDelegate.m in Sources */,
 			);
